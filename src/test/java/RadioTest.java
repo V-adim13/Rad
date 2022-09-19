@@ -139,7 +139,17 @@ public class RadioTest {
         int actual = radio.getCurrentVolume();
         assertEquals(expected, actual);
     }
+    @Test
+    public void shouldPastVolum() {
+        Radio radio = new Radio();
+        radio.setCurrentVolume(0);
+        radio.pastVolume();
+        int expected = 0;
+        int actual = radio.getCurrentVolume();
+        assertEquals(expected, actual);
+    }
 }
+
 
 
 
